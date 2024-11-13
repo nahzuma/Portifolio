@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Meu Perfil Pessoal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+
+  <!-- Header com Navegação -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="#about">Sobre</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Sobre -->
+  <section id="about" class="about-section">
+    <img src="Imagens/Bruno - Foto 3.png" alt="Foto Bruno" class="profile-pic">
+    <h1>Gabriel Allan Ribeiro da Silva</h1>
+    <p>Sou Gabriel Allan, um desenvolvedor front-end em aprendizado, comprometido em criar interfaces de usuário funcionais e atraentes. Estou aprofundando meu conhecimento em tecnologias como HTML, CSS, JavaScript e frameworks modernos para construir experiências digitais que sejam intuitivas e eficazes.</p>
+  </section>
+
+  <!-- Seção Portfólio -->
+    <div>
+      <p><h2>Portfólio</h2></p>
+    </div>
+    <section id="portfolio">
+    <div class="project">
+      <h3>Projeto 1</h3>
+      <p>Desenvolvimento do primeiro site em html, criação de um trabalho sobre a evolução da Web.</p>
+      <a href="https://bastosmelo.github.io/UNIT-Programacao-Web-Frontend/" target="_blank">
+        <img src="Imagens/Site-Evolução da WEB.jpg" alt="Imagem do Projeto 1">
+      </a>
+    </div>
+    <div class="project">
+      <h3>Projeto 2</h3>
+      <p>Desenvolvimento de um site responsivo utilizando html e css, trabalho em equipe.</p>
+      <a href="https://rusthenronald.github.io/Projeto-Front-end/" target="_blank">
+        <img src="Imagens/Site-Sport Finder.jpeg" alt="Imagem do Projeto 2">
+      </a>
+    </div>
+    <div class="project">
+      <h3>Projeto 3</h3>
+      <p>Desenvolvimento de um jogo (Jogo de Advinhação) num site utilizando html, css e javascript.</p>
+      <a href="https://bastosmelo.github.io/Jogo_da_Advinhacao/" target="_blank">
+        <img src="Imagens/Site-Jogo da Advinhação.jpg" alt="Imagem do Projeto 3">
+      </a>
+    </div>
+    <div class="project">
+      <h3>Projeto 4</h3>
+      <p>Desenvolvimento de uma calculadora num site utilizando html, css e javascript.</p>
+      <a href="https://bastosmelo.github.io/Calculadora/" target="_blank">
+        <img src="Imagens/Site-Calculadora.jpeg" alt="Imagem do Projeto 4">
+      </a>
+    </div>
+    <div class="project">
+      <h3>Projeto 5</h3>
+      <p>Desenvolvimento de um site que grava uma lista de atividades utilizando html, css e javascript.</p>
+      <a href="https://bastosmelo.github.io/Atividade_Lista_Tarefas/" target="_blank">
+        <img src="Imagens/Lista de Tarefas.jpg" alt="Imagem do Projeto 5">
+      </a>
+    </div>
+    <div class="project">
+      <h3>Projeto 6</h3>
+      <p>Desenvolvimento de um site Metodologia ágil Kanban utilizando html, css e javascript.</p>
+      <a href="https://bastosmelo.github.io/Projeto_Kanban_-_Lista_de_Tarefas/" target="_blank">
+        <img src="Imagens/Site-Kanban Lista de Tarefas.jpg" alt="Imagem do Projeto 6">
+      </a>
+    </div>
+    <div class="project">
+      <h3>Projeto 7</h3>
+      <p>Desenvolvimento de um novo projeto.</p>
+      <a href="link-do-projeto7" target="_blank">
+        <img src="imagem-projeto7.jpg" alt="Imagem do Projeto 7">
+      </a>
+    </div>
+    <div class="project">
+      <h3>Projeto 8</h3>
+      <p>Desenvolvimento de um novo projeto.</p>
+      <a href="link-do-projeto8" target="_blank">
+        <img src="imagem-projeto8.jpg" alt="Imagem do Projeto 8">
+      </a>
+    </div>
+    </section>
+  
+
+  <!-- Seção Habilidades -->
+  <section id="skills" class="skills-section">
+    <h2>Habilidades</h2>  
+    <div class="skills-grid">
+      <div class="skill">
+        <h4>HTML</h4>
+        <div class="progress-bar"><div class="progress" style="width: 60%;">60%</div>
+      </div>
+      <div class="skill">
+        <h4>CSS</h4>
+        <div class="progress-bar"><div class="progress" style="width: 35%;">35%</div>
+      </div>
+      <div class="skill">
+        <h4>JavaScript</h4>
+        <div class="progress-bar"><div class="progress" style="width: 12%;">12%</div>
+      </div>
+      <div class="skill">
+        <h4>Python</h4>
+        <div class="progress-bar"><div class="progress" style="width: 35%;">35%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contact" class="contact-section">
+    <h2>Contato</h2>
+    <form id="contact-form" class="contact-form">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error-message">Por favor, insira seu nome.</span>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error-message">Por favor, insira um e-mail válido.</span>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="error-message">Por favor, insira uma mensagem.</span>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4269.866512627229!2d-37.059857973942044!3d-10.96896281292718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab143dce5a8f5%3A0xdce07c193ed061d0!2sUnit%20-%20Universidade%20Tiradentes!5e1!3m2!1spt-BR!2sbr!4v1730418824794!5m2!1spt-BR!2sbr" width="45%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/bruno-bastos-melo-442ba9bb" target="_blank">
+            <img src="Imagens/LinkedIn.jpg" alt="LinkedIn" class="logo">
+        </a>
+        <a href="https://github.com/bastosmelo" target="_blank">
+            <img src="Imagens/GitHub.jpg" alt="GitHub" class="logo">
+        </a>
+        <a href="https://www.facebook.com/bastosmelo" target="_blank">
+            <img src="Imagens/Facebook.jpg" alt="Facebook" class="logo">
+        </a>
+        <a href="https://www.instagram.com/bastosmelo/" target="_blank">
+            <img src="Imagens/Instagram.jpg" alt="Instagram" class="logo">
+        </a>
+        <a href="https://x.com/BrunoBastosMelo" target="_blank">
+            <img src="Imagens/X-Twiter.jpg" alt="Twitter" class="logo">
+        </a>
+    </div>
+    <p>Bruno Bastos Melo © 2024. Todos os direitos reservados.</p>
+    <p><i>bruno.bastos@souunit.com.br</i></p>
+  </footer>
+</body>
+</html>
